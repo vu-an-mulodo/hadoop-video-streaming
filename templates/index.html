@@ -11,8 +11,11 @@
 
 <body>
 <video id="video" width="640" controls>
-    <source src={{ video }} type="video/mp4">
-    <track label="English" kind="subtitles" srclang="en" src={{ sub }}>
+{#    <source src="video/DarkKnight.mp4" type="video/mp4">#}
+{#    <track label="English" kind="subtitles" srclang="en" src="caption/DarkKnight.vtt">#}
+
+	<source src={{ video }} type="video/mp4">
+    <track src={{ sub }} label="English" kind="subtitles" srclang="en">
 </video>
 </body>
 </html>

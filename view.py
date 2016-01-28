@@ -11,5 +11,4 @@ def index():
 	d = str(uuid4())
 	# f = subprocess.Popen(['hadoop', 'fs', '-get', '/caption/DarkKnight.vtt', '/vagrant'], stdout=subprocess.PIPE)
 	hdfs.get('/video/{}.mp4'.format(n), 'status/{}/{}.mp4'.format(d, n))
-	# hdfs.get()
 	return render_template('index.html', video='status/{}/{}.mp4'.format(d, n), sub='')
